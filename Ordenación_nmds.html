@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Talleres de Análisis Multivariados en R - 10&nbsp; Taller 5. NMDS Malezas</title>
+<title>Talleres de Análisis Multivariados en R - 10&nbsp; Taller 5.1 NMDS Malezas</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -93,7 +93,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./Ordenación_mca.html" rel="next">
+<link href="./Ordenación_nmds2.html" rel="next">
 <link href="./Ordenación_pca2.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -141,7 +141,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Taller 5. NMDS Malezas</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Taller 5.1 NMDS Malezas</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -152,7 +152,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title d-none d-lg-block"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Taller 5. NMDS Malezas</span></h1>
+      <h1 class="title d-none d-lg-block"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Taller 5.1 NMDS Malezas</span></h1>
                       </div>
   </div>
     
@@ -230,37 +230,52 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Ordenación_nmds.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Taller 5. NMDS Malezas</span></a>
+  <a href="./Ordenación_nmds.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Taller 5.1 NMDS Malezas</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Ordenación_mca.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Taller 6. MCA Peces</span></a>
+  <a href="./Ordenación_nmds2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Taller 5. NMDS Peces</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Ordenación_rda.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Taller 7. RDA Microalgas</span></a>
+  <a href="./Ordenación_ca.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Taller 6.1 CA peces</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Clasificación_cla.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Taller 8. CLA Bahías</span></a>
+  <a href="./Ordenación_mca.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Taller 6.2 MCA Peces</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Clasificación_lda.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Taller 9. LDA peces</span></a>
+  <a href="./Ordenación_rda.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Taller 7. RDA Microalgas</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Manova.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Taller 10. Manovas peces</span></a>
+  <a href="./Clasificación_cla.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Taller 8. CLA Bahías</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Permanova.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Taller 11. Permanovas peces</span></a>
+  <a href="./Clasificación_lda.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Taller 9. LDA peces</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Manova.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Taller 10. Manovas peces</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Permanova.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Taller 11. Permanovas peces</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Pautas_Estudio_Caso.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Pautas Estudios de Caso</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -367,8 +382,8 @@ Distance: jaccard
 Dimensions: 2 
 Stress:     0.1362424 
 Stress type 1, weak ties
-Best solution was repeated 3 times in 20 tries
-The best solution was from try 11 (random start)
+Best solution was repeated 2 times in 20 tries
+The best solution was from try 13 (random start)
 Scaling: centring, PC rotation, halfchange scaling 
 Species: expanded scores based on 'datos[, 3:52]' </code></pre>
 </div>
@@ -464,13 +479,13 @@ Species: expanded scores based on 'datos[, 3:52]' </code></pre>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>coord.sit<span class="sc">$</span>grp <span class="ot">&lt;-</span> datos<span class="sc">$</span>Región                   <span class="co"># Adicionar columna de grupos por región</span></span>
 <span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(coord.sit)                                 <span class="co"># vista resumida de las coordenadas de stios</span></span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>            MDS1       MDS2 sitio  grp
-ACa -0.368866266 -0.2302080   ACa Alta
-ACr  0.400345346 -0.1960925   ACr Alta
-ALa -0.583055527  0.3700315   ALa Alta
-BBu  0.885282605  0.1463673   BBu Baja
-BLa -0.094239333  0.2144762   BLa Baja
-BMa  0.001411964  0.5159347   BMa Baja</code></pre>
+<pre><code>           MDS1       MDS2 sitio  grp
+ACa -0.36886168 -0.2302081   ACa Alta
+ACr  0.40034821 -0.1960951   ACr Alta
+ALa -0.58305209  0.3700341   ALa Alta
+BBu  0.88528254  0.1463749   BBu Baja
+BLa -0.09423803  0.2144736   BLa Baja
+BMa  0.00141516  0.5159311   BMa Baja</code></pre>
 </div>
 </div>
 <p style="color:#1f78b4;">
@@ -484,13 +499,13 @@ BMa  0.001411964  0.5159347   BMa Baja</code></pre>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>coord.tax<span class="sc">$</span>especies <span class="ot">&lt;-</span> <span class="fu">rownames</span>(coord.tax)       <span class="co"># Insertar columna con nombres de las especies</span></span>
 <span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(coord.tax) </span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>             MDS1       MDS2 especies
-Acal  -0.26775511  0.1591929     Acal
-Achas -0.22679408  0.3661177    Achas
-Acsc   0.00670094  0.8749424     Acsc
-Adein  0.62990063 -0.3486014    Adein
-Adite -0.09940421 -0.1925376    Adite
-Alal  -0.01647375 -0.5190504     Alal</code></pre>
+<pre><code>              MDS1       MDS2 especies
+Acal  -0.267751943  0.1591896     Acal
+Achas -0.226788075  0.3661129    Achas
+Acsc   0.006705397  0.8749362     Acsc
+Adein  0.629904734 -0.3486052    Adein
+Adite -0.099399387 -0.1925400    Adite
+Alal  -0.016477443 -0.5190497     Alal</code></pre>
 </div>
 </div>
 <p style="color:#1f78b4;">
@@ -698,8 +713,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./Ordenación_mca.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Taller 6. MCA Peces</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./Ordenación_nmds2.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Taller 5. NMDS Peces</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
